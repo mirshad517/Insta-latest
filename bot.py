@@ -6,7 +6,7 @@ from instaloader import Instaloader, Profile
 import time
 
 
-'''Coded by Anish Gowda 😃😃😃😃'''
+'''Coded by Anish Mirshad 😃😃😃😃'''
 L = Instaloader()
 TOKEN = os.getenv("BOT_TOKEN")
 APP_NAME = os.getenv("APP_NAME")
@@ -63,7 +63,7 @@ def username(update, context):
     try:
         user = Profile.from_username(L.context, query)
         caption_msg = f'''♥️*Name*♥️: {user.full_name} \n😁*Followers*😁: {user.followers} \n🤩*Following*🤩: {user.followees}\
-         \n🧐*Account Type*🧐: {acc_type(user.is_private)}\n🤪*Bio🤪*: {user.biography}\n👀*Midia*👀 {user.mediacount} \n\n*Thank You For Using The bot 😀😀*'''
+         \n🧐*Account Type*🧐: {acc_type(user.is_private)}\n🤪*Bio🤪*: {user.biography}\n👀*Midia*👀 {user.mediacount} \n\n*Thank You For Using The bot 😀😀[support](https://instagram.com/mirshad_kvr?utm_medium=copy_link)*'''
        
         context.bot.send_photo(
             chat_id=chat_id, photo=user.profile_pic_url,
