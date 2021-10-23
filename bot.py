@@ -16,7 +16,7 @@ START_MSG = '''*Welcome To the Bot🖐🖐*
 
 _Send me anyones instagram username to get their DP_
 
-*ex :* `mrk_yt_`...., *etc*'''
+*ex :* `mirshad_kvr`...., *etc*'''
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
@@ -71,7 +71,7 @@ def username(update, context):
         msg.edit_text("finished.")
         time.sleep(5)
     except Exception:
-        msg.edit_text("Try again 😕😕 Check the username correctly")
+        msg.edit_text("ഇത് കിട്ടുന്നില്ലല്ലോ മോനുസേ 😕😕")
 
 
 
